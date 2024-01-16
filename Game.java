@@ -8,7 +8,7 @@ public class Game {
         System.out.println("------------------------------- Number Guessing game in java --------------------------\n");
 
         int next = re.nextInt(100);
-        System.out.println(next);
+        // System.out.println(next);
 
         System.out.println("--------------------- Computer Select the Random Number up to 100 ---------------------\n");
         System.out.print("Enter Your Name : ");
