@@ -13,8 +13,8 @@ public class Game {
         System.out.println("--------------------- Computer Select the Random Number up to 100 ---------------------\n");
         System.out.print("Enter Your Name : ");
         String name = sc.nextLine();
-        System.out.format("\n--------------------- \tWelcome To %s \t---------------------", name);
-        System.out.println("\n--------------------- Now It's Your Turn to Guess the Number ---------------------");
+        System.out.format("\n--------------------- \tWelcome To %s \t---------------------\n", name);
+        System.out.println("\n--------------------- Now It's Your Turn to Guess the Number ---------------------\n");
         System.out.println(
                 "\n:::::::::::::::::: Note :- We can give you Three Turn to guess the Number.If you failed then you loss the game ::::::::::::::::::");
 
@@ -26,24 +26,24 @@ public class Game {
                 if (next == num + 5 || next == num - 5 || next == num + 4 || next == num - 4 || next == num - 3
                         || next == num + 3 || next == num - 2 || next == num + 2 || next == num + 1
                         || next == num - 1) {
-                    System.out.println("You're close! Keep going, you're getting warmer in your guesses! ");
+                    System.out.println("You're close! Keep going, you're getting warmer in your guesses!\n ");
 
                 } else if (num >= next) {
                     if (num > next) {
-                        System.out.println("The guessed number is higher than the computer's selected number.");
+                        System.out.println("The guessed number is higher than the computer's selected number.\n");
                         if(num > 100){
-                            System.out.println("Invalid Input !!! Please Enter the number under the 100 ---- ");
+                            System.out.println("Invalid Input !!! Please Enter the number under the 100 ---- \n");
                             break;
                         }
                     } else {
-                        System.out.format("Congratulations! %s have correctly guessed the number!", name);
+                        System.out.format("Congratulations! %s have correctly guessed the number!\n", name);
                         break;
                     }
                 } else if (num <= next) {
                     if (num < next) {
-                        System.out.println("The guessed number is Less than the computer's selected number.");
+                        System.out.println("The guessed number is Less than the computer's selected number.\n");
                     } else {
-                        System.out.format("Congratulations! %s have correctly guessed the number!", name);
+                        System.out.format("Congratulations! %s have correctly guessed the number!\n", name);
                         break;
                     }
                 } else if (num < 0) {
@@ -61,8 +61,8 @@ public class Game {
             e.printStackTrace();
         } finally {
             sc.close();
-            System.out.printf("\n\nComputer Selected Number is %d \n", next);
-            System.out.println("\nGame Over. Thank you for playing!\r\n");
+            System.out.printf("Computer Selected Number is %d \n", next);
+            System.out.println("Game Over. Thank you for playing!\r\n");
         }
 
     }
